@@ -6,6 +6,8 @@ const studentRoutes = require('./src/movie/routes');
 const app = express();
 const port = 3000;
 
+app.disable('x-powered-by');
+
 // 2. Define CORS options
 const allowedOrigins = ['http://localhost:5500']; // Frontend origin
 
